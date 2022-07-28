@@ -40,7 +40,7 @@ kanagawa.setup({
 })
 
 vim.cmd([[colorscheme kanagawa]])
--- local utils = require("florentc.utils")
+-- local utils = require("personnal.utils")
 -- utils.opt("o", "background", "dark")
 
 vim.cmd([[highlight NvimTreeVertSplit guibg=None guifg=#16161D]])

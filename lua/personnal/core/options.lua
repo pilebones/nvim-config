@@ -1,4 +1,4 @@
-local utils = require("florentc.utils")
+local utils = require("personnal.utils")
 
 local opt = vim.opt
 

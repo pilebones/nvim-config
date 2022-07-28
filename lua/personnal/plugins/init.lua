@@ -9,7 +9,7 @@ local plugins = {
   ["nvim-treesitter/playground"] = {},
   ["nvim-treesitter/nvim-treesitter"] = {
     config = function()
-      require("florentc.plugins.configs.treesitter")
+      require("personnal.plugins.configs.treesitter")
     end,
   },
   ["nvim-treesitter/nvim-treesitter-textobjects"] = {},
@@ -28,12 +28,12 @@ local plugins = {
   -- Top / Bottom lines
   ["nvim-lualine/lualine.nvim"] = {
     config = function()
-      require("florentc.plugins.configs.lualine")
+      require("personnal.plugins.configs.lualine")
     end,
   },
   ["akinsho/nvim-bufferline.lua"] = {
     config = function()
-      require("florentc.plugins.configs.bufferline")
+      require("personnal.plugins.configs.bufferline")
     end,
   },
   ["tiagovla/scope.nvim"] = {
@@ -54,14 +54,14 @@ local plugins = {
       "saadparwaiz1/cmp_luasnip",
     },
     config = function()
-      require("florentc.plugins.configs.cmp")
+      require("personnal.plugins.configs.cmp")
     end,
   },
 
   -- Telescope
   ["nvim-telescope/telescope.nvim"] = {
     config = function()
-      require("florentc.plugins.configs.telescope")
+      require("personnal.plugins.configs.telescope")
     end,
   },
   ["nvim-telescope/telescope-project.nvim"] = {},
@@ -74,7 +74,7 @@ local plugins = {
     requires = { "rmagatti/auto-session", "nvim-telescope/telescope.nvim" },
     config = function()
       require("session-lens").setup()
-      require("florentc.plugins.configs.autosession")
+      require("personnal.plugins.configs.autosession")
     end,
   },
   ["jvgrootveld/telescope-zoxide"] = {},
@@ -88,24 +88,24 @@ local plugins = {
   -- Git
   ["lewis6991/gitsigns.nvim"] = {
     config = function()
-      require("florentc.plugins.configs.gitsigns")
+      require("personnal.plugins.configs.gitsigns")
     end,
   },
   ["ruifm/gitlinker.nvim"] = {
     config = function()
-      require("florentc.plugins.configs.gitlinker")
+      require("personnal.plugins.configs.gitlinker")
     end,
   },
   ["tpope/vim-fugitive"] = {},
   ["sindrets/diffview.nvim"] = {
     config = function()
-      require("florentc.plugins.configs.diffview")
+      require("personnal.plugins.configs.diffview")
     end,
   },
   ["rhysd/committia.vim"] = {},
   ["ThePrimeagen/git-worktree.nvim"] = {
     config = function()
-      require("florentc.plugins.configs.gitworktree")
+      require("personnal.plugins.configs.gitworktree")
     end,
   },
 
@@ -113,7 +113,7 @@ local plugins = {
   ["onsails/lspkind-nvim"] = {},
   ["folke/trouble.nvim"] = {
     config = function()
-      require("florentc.plugins.configs.trouble")
+      require("personnal.plugins.configs.trouble")
     end,
   },
   ["j-hui/fidget.nvim"] = {
@@ -123,7 +123,7 @@ local plugins = {
   },
   ["jose-elias-alvarez/null-ls.nvim"] = {
     config = function()
-      require("florentc.plugins.configs.null_ls")
+      require("personnal.plugins.configs.null_ls")
     end,
   },
   ["williamboman/mason.nvim"] = {
@@ -132,7 +132,7 @@ local plugins = {
       "neovim/nvim-lspconfig",
     },
     config = function()
-      require("florentc.plugins.configs.lspconfig")
+      require("personnal.plugins.configs.lspconfig")
     end,
   },
   ["L3MON4D3/LuaSnip"] = {},
@@ -141,12 +141,12 @@ local plugins = {
   -- Utils
   ["kyazdani42/nvim-tree.lua"] = {
     config = function()
-      require("florentc.plugins.configs.nvimtree")
+      require("personnal.plugins.configs.nvimtree")
     end,
   },
   ["mg979/vim-visual-multi"] = {
     config = function()
-      require("florentc.plugins.configs.others").visual_multi()
+      require("personnal.plugins.configs.others").visual_multi()
     end,
   },
   ["tomtom/tcomment_vim"] = {},
@@ -155,7 +155,7 @@ local plugins = {
   },
   ["windwp/nvim-autopairs"] = {
     config = function()
-      require("florentc.plugins.configs.others").autopairs()
+      require("personnal.plugins.configs.others").autopairs()
     end,
   },
   ["michaeljsmith/vim-indent-object"] = {},
@@ -163,7 +163,7 @@ local plugins = {
   ["lewis6991/impatient.nvim"] = {},
   ["nvim-pack/nvim-spectre"] = {
     config = function()
-      require("florentc.plugins.configs.spectre")
+      require("personnal.plugins.configs.spectre")
     end,
   },
   ["samjwill/nvim-unception"] = {},
@@ -193,7 +193,7 @@ local plugins = {
       "leoluz/nvim-dap-go",
     },
     config = function()
-      require("florentc.plugins.configs.dap")
+      require("personnal.plugins.configs.dap")
     end,
   },
   ["jbyuki/one-small-step-for-vimkind"] = {},
@@ -208,11 +208,11 @@ local plugins = {
       "nvim-treesitter/nvim-treesitter",
       "antoinemadec/FixCursorHold.nvim",
       "nvim-neotest/neotest-plenary",
-      "~/projects/perso/neotest-go",
-      -- "nvim-neotest/neotest-go",
+      -- "~/projects/perso/neotest-go",
+      "nvim-neotest/neotest-go",
     },
     config = function()
-      require("florentc.plugins.configs.neotest")
+      require("personnal.plugins.configs.neotest")
     end,
   },
   ["andythigpen/nvim-coverage"] = {
@@ -261,10 +261,10 @@ local plugins = {
   ["ThePrimeagen/harpoon"] = {},
   ["TimUntersberger/neogit"] = {
     config = function()
-      require("florentc.plugins.configs.neogit")
+      require("personnal.plugins.configs.neogit")
     end,
   },
   ["rafamadriz/friendly-snippets"] = {},
 }
 
-require("florentc.core.packer").run(plugins)
+require("personnal.core.packer").run(plugins)

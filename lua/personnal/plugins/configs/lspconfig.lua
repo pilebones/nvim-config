@@ -11,7 +11,7 @@ end
 local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-local config = require("florentc.core.config")
+local config = require("personnal.core.config")
 local servers = {}
 
 for k, _ in pairs(config.lspservers) do
@@ -24,7 +24,7 @@ require("mason-lspconfig").setup {
 }
 
 local lspconfig = require("lspconfig")
-local lsp = require("florentc.plugins.configs.lsp")
+local lsp = require("personnal.plugins.configs.lsp")
 
 M.add_lspconfig = function(server, settings, on_attach, capa)
   lspconfig[server].setup({

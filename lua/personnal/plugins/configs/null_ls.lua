@@ -7,7 +7,7 @@ end
 -- TODO: treesitter require check
 -- TODO: lspconfig plugin require check
 
-local lsp = require("florentc.plugins.configs.lsp")
+local lsp = require("personnal.plugins.configs.lsp")
 
 local options = {
   log = {

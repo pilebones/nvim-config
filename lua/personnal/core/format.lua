@@ -1,9 +1,9 @@
 local M = {}
 
-local utils = require("florentc.utils")
+local utils = require("personnal.utils")
 local api = vim.api
 
-utils.map("v", "<leader>tt", '<cmd>lua require("florentc.core.format").format_table()<cr>')
+utils.map("v", "<leader>tt", '<cmd>lua require("personnal.core.format").format_table()<cr>')
 
 M.format_table = function()
   -- TODO: length issue with symbols

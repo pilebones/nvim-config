@@ -76,8 +76,7 @@ local options = {
     },
     project = {
       base_dirs = {
-        { "~/projects/onprem", max_depth = 2 },
-        -- { "~/projects/onprem/go/src/sentryo.net", max_depth = 2 },
+        { "~/projects/cisco/cv", max_depth = 4 },
       },
     },
     bookmarks = {
@@ -108,7 +107,7 @@ for _, e in pairs(extensions) do
   telescope.load_extension(e)
 end
 
-local config = require("florentc.core.config")
+local config = require("personnal.core.config")
 local M = {}
 
 M.find_nvim_files = function()

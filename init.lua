@@ -3,6 +3,6 @@ if present then
   reload.reload_module("florentc", true)
 end
 
-require("florentc.core")
-require("florentc.core.packer").bootstrap()
-require("florentc.plugins")
+require("personnal.core")
+require("personnal.core.packer").bootstrap()
+require("personnal.plugins")

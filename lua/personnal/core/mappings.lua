@@ -1,4 +1,4 @@
-local utils = require("florentc.utils")
+local utils = require("personnal.utils")
 
 local M = {}
 
@@ -85,11 +85,11 @@ M.telescope = {
     ["<leader>fm"] = "<cmd>lua require('telescope.builtin').keymaps()<cr>",
     ["<leader>e"] = "<cmd>lua require('telescope.builtin').commands()<cr>",
     -- Personal
-    ["<leader>p"] = "<cmd>lua require('florentc.plugins.configs.telescope').project_files()<CR>",
-    ["<leader>df"] = "<cmd>lua require('florentc.plugins.configs.telescope').find_nvim_files()<cr>",
-    ["<leader>fn"] = "<cmd>lua require('florentc.plugins.configs.telescope').find_notes()<cr>",
-    ["<leader>fe"] = "<cmd>lua require('florentc.plugins.configs.telescope').find_envs()<cr>",
-    -- ["<leader>ff"] = "<cmd>lua require('florentc.plugins.configs.telescope').find_features()<cr>",
+    ["<leader>p"] = "<cmd>lua require('personnal.plugins.configs.telescope').project_files()<CR>",
+    ["<leader>df"] = "<cmd>lua require('personnal.plugins.configs.telescope').find_nvim_files()<cr>",
+    ["<leader>fn"] = "<cmd>lua require('personnal.plugins.configs.telescope').find_notes()<cr>",
+    ["<leader>fe"] = "<cmd>lua require('personnal.plugins.configs.telescope').find_envs()<cr>",
+    -- ["<leader>ff"] = "<cmd>lua require('personnal.plugins.configs.telescope').find_features()<cr>",
     -- Plugins
     ["<leader>fs"] = '<cmd>lua require("session-lens").search_session()<cr>',
     -- TODO: There is a conflict with format file
@@ -116,7 +116,7 @@ M.others = {
     ["<leader>S"] = "<cmd>lua require('spectre').open_visual({select_word=true})<cr>",
 
     -- Create a new note
-    ["<leader>cn"] = '<cmd>lua require("florentc.keymaps").create_new_note()<cr>',
+    ["<leader>cn"] = '<cmd>lua require("personnal.keymaps").create_new_note()<cr>',
   },
 }
 M.load_mappings(M.others)
@@ -135,7 +135,7 @@ M.git = {
     ["<Leader>gs"] = "<cmd>Git<CR>",
     ["<Leader>ggs"] = "<cmd>Git stash<CR>",
     ["<Leader>ggp"] = "<cmd>Git stash pop<CR>",
-    ["<leader>gp"] = '<cmd>lua require("florentc.core.mappings").git_push_to_current()<cr>',
+    ["<leader>gp"] = '<cmd>lua require("personnal.core.mappings").git_push_to_current()<cr>',
   },
 }
 M.load_mappings(M.git)
@@ -184,7 +184,7 @@ utils.map("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>", { silent = true 
 -- utils.map("n", "gr", "<cmd>TroubleToggle lsp_references<cr>", { silent = true })
 
 M.create_new_note = function()
-  local present, config = pcall(require, "florentc.core.config")
+  local present, config = pcall(require, "personnal.core.config")
   if not present then
     return
   end

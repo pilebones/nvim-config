@@ -17,7 +17,7 @@ M.bootstrap = function()
     })
 
     vim.cmd "packadd packer.nvim"
-    require "florentc.plugins"
+    require "personnal.plugins"
     vim.cmd "PackerSync"
   end
 end

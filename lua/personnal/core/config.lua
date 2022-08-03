@@ -1,5 +1,5 @@
 local config = {
-  dotfiles_path = "$HOME/projects/perso/nvim-config",
+  dotfiles_path = "$HOME/.config/nvim",
   note_paths = {
     -- Personal notes
     "$HOME/projects/notes/content",

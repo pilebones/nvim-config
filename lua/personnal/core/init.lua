@@ -8,3 +8,6 @@ require("personnal.core.theme")
 
 -- Others
 require("personnal.core.format")
+
+local custom_cmd = require("personnal.core.custom_cmd")
+custom_cmd.add_format_doc_cmd()

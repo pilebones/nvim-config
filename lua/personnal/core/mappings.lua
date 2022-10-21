@@ -161,7 +161,8 @@ M.load_mappings(M.diffview)
 M.dap = {
   n = {
     ["<leader>db"] = "<cmd>lua require('dap').toggle_breakpoint()<cr>",
-    ["<leader>dd"] = "<cmd>lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<cr>",
+    -- ["<leader>dd"] = "<cmd>lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<cr>",
+    ["<leader>dd"] = "<cmd>lua require('dap').run_to_cursor()<cr>",
     ["<leader>dp"] = "<cmd>lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<cr>",
     ["<leader>dl"] = "<cmd>lua require('dap').run_last()<cr>",
     ["<leader>dc"] = "<cmd>lua require('dap').continue()<cr>",

@@ -8,7 +8,7 @@ for type, icon in pairs(signs) do
 end
 
 -- For jsonls to work, we need to specify snippet capability
-local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local config = require("personnal.core.config")

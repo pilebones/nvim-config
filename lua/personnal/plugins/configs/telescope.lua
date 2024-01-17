@@ -76,7 +76,7 @@ local options = {
     },
     project = {
       base_dirs = {
-        { "~/projects/cisco/cv", max_depth = 4 },
+        { "~/projects/cisco/iotod/cv", max_depth = 4 },
       },
     },
     bookmarks = {

@@ -10,7 +10,7 @@ local options = {
     lualine_b = { "branch" },
     lualine_c = {
       { "diagnostics", sources = { "nvim_diagnostic" } },
-      { require("auto-session-library").current_session_name },
+      -- { require("auto-session-library").current_session_name },
       "filename",
     },
     lualine_x = {

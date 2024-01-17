@@ -120,6 +120,8 @@ local plugins = {
     config = function()
       require("fidget").setup()
     end,
+    -- branch = "legacy",
+    commit = "legacy",
   },
   ["jose-elias-alvarez/null-ls.nvim"] = {
     config = function()
@@ -249,14 +251,14 @@ local plugins = {
       "kristijanhusak/vim-dadbod-completion",
     },
   },
-  -- ["ray-x/go.nvim"] = {
-  --   requires = {
-  --     "ray-x/guihua.lua",
-  --   },
-  --   config = function()
-  --     -- require("go").setup()
-  --   end,
-  -- },
+  ["ray-x/go.nvim"] = {
+    requires = {
+      "ray-x/guihua.lua",
+    },
+    config = function()
+      require("go").setup()
+    end,
+  },
   -- use("tami5/lspsaga.nvim")
   ["ThePrimeagen/harpoon"] = {},
   ["TimUntersberger/neogit"] = {

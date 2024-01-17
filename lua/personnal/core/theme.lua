@@ -35,7 +35,7 @@ kanagawa.setup({
   transparent = false,
   dimInactive = false,
   colors = my_colors,
-  overrides = {},
+  -- overrides = {},
   globalStatus = true,
 })
 

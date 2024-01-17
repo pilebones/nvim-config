@@ -28,7 +28,8 @@ local config = {
     ["jsonls"] = {},
     ["pyright"] = {},
     ["rust_analyzer"] = {},
-    ["sumneko_lua"] = {
+    -- ["sumneko_lua"] = {
+    ["lua_ls"] = {
       -- Merge settings
       settings = function()
         -- local s = require("lua-dev").setup().settings

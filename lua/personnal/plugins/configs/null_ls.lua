@@ -31,8 +31,8 @@ local options = {
     -- yaml
     -- null_ls.builtins.diagnostics.yamllint,
     -- sql
-    null_ls.builtins.formatting.sqlfluff,
-    null_ls.builtins.diagnostics.sqlfluff,
+    -- null_ls.builtins.formatting.sqlfluff,
+    -- null_ls.builtins.diagnostics.sqlfluff,
   },
 }
 
